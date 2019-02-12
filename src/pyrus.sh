@@ -35,7 +35,8 @@ pyrustarget="$instdir/pyrus.phar"
 if [ ! -e "$pyrusphar" ]; then
     #download pyrus from svn
     wget -O "$pyrusphar" \
-        "http://pear2.php.net/pyrus.phar"
+        "https://github.com/pyrus/Pyrus/raw/master/pyrus.phar"
+        # old URL "http://pear2.php.net/pyrus.phar"
 fi
 if [ ! -e "$pyrusphar" ]; then
     echo "Please put pyrus.phar into bzips/"
